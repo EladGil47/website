@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Header from '../Common/Header';
-import local_image from '../assets/img/header-bg.jpg';
+import home_image from '../assets/img/header-bg.jpg';
 
 class Home extends Component {
 
@@ -13,7 +13,7 @@ class Home extends Component {
                     buttonText="tELL ME MORE"
                     link="/service"
                     showButton={true}
-                    image={local_image}
+                    image={home_image}
                 />
             </div>
         )
