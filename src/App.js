@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import PageWrapper from './components/PageWrapper';
-import { BrowserRouter as Router,Routes, Route } from "react-router-dom";
-// import { Route, Switch } from "react-router";
-
-
+import { BrowserRouter as Router, Route } from "react-router-dom";
 // import Header from './components/Common/Header';
 
 // Pages
