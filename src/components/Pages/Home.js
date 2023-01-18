@@ -8,7 +8,9 @@ import Portfolio from '../Common/Portfolio'
 import Team from '../Common/Team'
 
 
+import Timeline from "../Common/Timeline";
 
+ 
 class Home extends Component {
 
     render() {
@@ -24,6 +26,7 @@ class Home extends Component {
                 />
                 <Services />
                 <Portfolio />
+                <Timeline/>
                 <Team />
             </div>
         )

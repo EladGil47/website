@@ -18,7 +18,9 @@ class PageWrapper extends Component {
 
                         <div className="collapse navbar-collapse" id="navbarResponsive">
                             <ul className="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                                <li className="nav-item"><Link className="nav-link" to="/services">Services</Link></li>
+                                {/* If i want to jump in the same tab href = # id of class name*/}
+                                <li className="nav-item"><a className="nav-link" href="#services">Services</a></li>
+                                {/* If i want to go to a new tab */}
                                 <li className="nav-item"><Link className="nav-link" to="/portfolio">Portfolio</Link></li>
                                 <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
                                 <li className="nav-item"><Link className="nav-link" to="/team">Team</Link></li>
