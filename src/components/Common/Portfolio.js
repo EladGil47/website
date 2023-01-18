@@ -14,7 +14,7 @@ const portfolio = [
     { title: 'Finish', subtitle: 'Identity', image: img3 },
     { title: 'Lines', subtitle: 'Branding', image: img4 },
     { title: 'Southwest', subtitle: 'Website Design', image: img5 },
-    { title: 'Window', subtitle: 'Photography', image: img6 },
+    { title: 'Window', subtitle: 'Photography', image: img6 }
 ];
 
 class Portfolio extends Component {
@@ -22,15 +22,18 @@ class Portfolio extends Component {
         return (
             <section class="page-section bg-light" id="portfolio">
             <div class="container">
+                
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Portfolio</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
+
                 <div class="row">
                     {portfolio.map((item,index) => {
                         return <PortfolioItem {...item} key = {index} />
                     })}
                 </div>
+
             </div>
         </section>
             
