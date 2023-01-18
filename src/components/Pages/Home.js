@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import Header from '../Common/Header';
 import home_image from '../assets/img/header-bg.jpg';
 
+// Re-useable components
+import Services from '../Common/Services'
+import Portfolio from '../Common/Portfolio'
+
+
 class Home extends Component {
 
     render() {
@@ -10,11 +15,13 @@ class Home extends Component {
                 <Header
                     title="Welcome To Our Studio"
                     subtitle="IT'S NICE TO MEET YOU"
-                    buttonText="tELL ME MORE"
-                    link="/service"
+                    buttonText="Tell me more"
+                    link="/services"
                     showButton={true}
                     image={home_image}
                 />
+                <Services />
+                <Portfolio />
             </div>
         )
     }

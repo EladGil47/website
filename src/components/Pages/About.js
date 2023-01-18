@@ -11,7 +11,7 @@ class About extends Component {
                title="About Us"
                subtitle="it's a really a to great story"
                buttonText="Tell me more"
-               link="/service"
+               link="/services"
                showButton={true}
                image={about_img}
            /> 
