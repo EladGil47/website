@@ -15,22 +15,27 @@ class Field extends Component {
                             placeholder={this.props.placeholder}
                             required="required"
                             data-validation-required-message="Please Enter"
-                            value={this.props.value}
-                            onChange={e => this.props.onChange(e)} />
+                            name={this.props.name}
+                            onChange={this.props.onChange}
+                            onBlur={this.props.onBlur}
+
+                            />
                         :
-                        <textarea
+                        <textarea rows="6"
                             className="form-control"
                             id={this.props.name}
-                            type={this.props.type}
                             placeholder={this.props.placeholder}
                             required="required"
                             data-validation-required-message="Please Enter"
-                            value={this.props.value}
-                            onChange={e => this.props.onChange(e)}
+                            name={this.props.name}
+                            onChange={this.props.onChange}
+                            onBlur={this.props.onBlur}
                         />
-
                 }
-                <p className="help-block text-danger"></p>
+                <p className="help-block text-danger">
+                    {(this.props.touched && this.props.errors) && 
+                    <span> This field is required ! </span>}
+                </p>
             </div>
         )
     }

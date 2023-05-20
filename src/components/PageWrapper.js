@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
-
-/**
- * 
- */
 class PageWrapper extends Component {
     render() {
         return (
@@ -22,8 +18,10 @@ class PageWrapper extends Component {
                         </button> */}
 
                         <div className="collapse navbar-collapse" id="navbarResponsive">
+                            {/* ul is unorder list structure */}
                             <ul className="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                                 {/* If i want to jump in the same tab href = # id of class name*/}
+                                {/* li is list item */}
                                 <li className="nav-item">
                                     <a className="nav-link" href="/#services">Services</a>
                                 </li>
@@ -38,7 +36,7 @@ class PageWrapper extends Component {
                                 </li>
                                 {/* If i want href go to a new tab */}
                                 <li className="nav-item">
-                                    <NavLink  className="nav-link" to="/contact">Contact</NavLink >
+                                    <NavLink className="nav-link" to="/contact">Contact</NavLink >
                                 </li>
                             </ul>
                         </div>
