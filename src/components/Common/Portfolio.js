@@ -20,15 +20,15 @@ const portfolio = [
 class Portfolio extends Component {
     render() {
         return (
-            <section class="page-section bg-light" id="portfolio">
-            <div class="container">
+            <section className="page-section bg-light" id="portfolio">
+            <div className="container">
                 
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <div className="text-center">
+                    <h2 className="section-heading text-uppercase">Portfolio</h2>
+                    <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
 
-                <div class="row">
+                <div className="row">
                     {portfolio.map((item,index) => {
                         return <PortfolioItem {...item} key = {index} />
                     })}

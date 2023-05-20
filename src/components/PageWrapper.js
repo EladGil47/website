@@ -1,7 +1,10 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
+/**
+ * 
+ */
 class PageWrapper extends Component {
     render() {
         return (
@@ -9,27 +12,39 @@ class PageWrapper extends Component {
                 <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" >
                     <div className="container">
 
-                        <Link className="navbar-brand" to="/"><img src="assets/img/navbar-logo.svg" alt="..." /></Link>
+                        <NavLink className="navbar-brand" to="/">
+                            <img src="assets/img/navbar-logo.svg" alt="" />
+                        </NavLink>
 
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                             Menu
-                            <i className="fas fa-bars ms-1"></i>
-                        </button>
+                            <i class="fa-solid fa-bars"></i>
+                        </button> */}
 
                         <div className="collapse navbar-collapse" id="navbarResponsive">
                             <ul className="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                                 {/* If i want to jump in the same tab href = # id of class name*/}
-                                <li className="nav-item"><a className="nav-link" href="#services">Services</a></li>
-                                {/* If i want to go to a new tab */}
-                                <li className="nav-item"><Link className="nav-link" to="/portfolio">Portfolio</Link></li>
-                                <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
-                                <li className="nav-item"><Link className="nav-link" to="/team">Team</Link></li>
-                                <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/#services">Services</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/#portfolio">Portfolio</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/#about">About</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/#team">Team</a>
+                                </li>
+                                {/* If i want href go to a new tab */}
+                                <li className="nav-item">
+                                    <NavLink  className="nav-link" to="/contact">Contact</NavLink >
+                                </li>
                             </ul>
                         </div>
-
                     </div>
                 </nav>
+                {/* Allows to work with a navigation */}
                 {this.props.children}
             </div>
         )

@@ -10,7 +10,9 @@ import Team from '../Common/Team'
 
 import Timeline from "../Common/Timeline";
 
- 
+ /**
+  * <Home> Home page
+  */
 class Home extends Component {
 
     render() {
